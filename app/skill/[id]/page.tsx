@@ -9,14 +9,16 @@ export async function generateStaticParams() {
   }))
 }
 
-export default function SkillPage({ params }: { params: { id: string } }) {
-  const skill = getSkillById(params.id)
-  const categories = getCategories()
-  const category = categories.find(c => c.id === skill?.category)
+export default async function SkillPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
+  const skill = getSkillById(id)
 
   if (!skill) {
     notFound()
   }
+
+  const categories = getCategories()
+  const category = categories.find(c => c.id === skill.category)
 
   return <SkillDetail skill={skill} category={category} />
 }
