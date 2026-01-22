@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import { Skill } from './schemas'
 
 export function createSiteMetadata(): Metadata {
   return {
@@ -25,7 +26,7 @@ export function createSiteMetadata(): Metadata {
   }
 }
 
-export function createSkillMetadata(skill: any): Metadata {
+export function createSkillMetadata(skill: Skill): Metadata {
   return {
     title: skill.name,
     description: skill.description,

@@ -3,13 +3,11 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
+import { createSiteMetadata } from '@/lib/metadata'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
-  title: 'SkillHub - Discover Claude Code Skills',
-  description: 'Browse and discover amazing agent skills for Claude Code',
-}
+export const metadata: Metadata = createSiteMetadata()
 
 export default function RootLayout({
   children,
