@@ -10,11 +10,11 @@ export function Header() {
           <div className="font-bold text-xl">SkillHub</div>
         </Link>
 
-        <nav className="flex items-center space-x-6">
+        <nav className="flex items-center space-x-6" aria-label="Main navigation">
           <Link href="/browse" className="text-sm font-medium hover:text-primary">
             Browse
           </Link>
-          <Link href="https://github.com" className="text-sm font-medium hover:text-primary">
+          <Link href="https://github.com" className="text-sm font-medium hover:text-primary" target="_blank" rel="noopener noreferrer">
             GitHub
           </Link>
           <Button asChild size="sm">

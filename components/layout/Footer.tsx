@@ -8,10 +8,10 @@ export function Footer() {
           Built with Next.js and shadcn/ui
         </p>
         <div className="flex gap-4">
-          <Link href="https://github.com" className="text-sm text-muted-foreground hover:text-foreground">
+          <Link href="https://github.com" className="text-sm text-muted-foreground hover:text-foreground" target="_blank" rel="noopener noreferrer">
             GitHub
           </Link>
-          <Link href="https://twitter.com" className="text-sm text-muted-foreground hover:text-foreground">
+          <Link href="https://twitter.com" className="text-sm text-muted-foreground hover:text-foreground" target="_blank" rel="noopener noreferrer">
             Twitter
           </Link>
         </div>

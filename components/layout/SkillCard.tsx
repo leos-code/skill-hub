@@ -16,7 +16,7 @@ export function SkillCard({ skill }: SkillCardProps) {
           <div className="aspect-video w-full overflow-hidden rounded-t-lg bg-muted">
             <img
               src={skill.screenshot}
-              alt={skill.name}
+              alt={`Screenshot of ${skill.name} skill interface`}
               className="h-full w-full object-cover"
             />
           </div>
@@ -32,8 +32,8 @@ export function SkillCard({ skill }: SkillCardProps) {
         </CardHeader>
         <CardContent>
           <div className="flex flex-wrap gap-2">
-            {skill.tags.slice(0, 3).map(tag => (
-              <Badge key={tag} variant="outline" className="text-xs">
+            {skill.tags.slice(0, 3).map((tag, index) => (
+              <Badge key={index} variant="outline" className="text-xs">
                 {tag}
               </Badge>
             ))}
