@@ -6,39 +6,40 @@ import { SkillGrid } from '@/components/skills/SkillGrid'
 import Fuse from 'fuse.js'
 import type { Skill } from '@/lib/schemas'
 
-function BrowseContent({
+async function BrowseContent({
   searchParams,
 }: {
   searchParams: Promise<{ q?: string; category?: string; sort?: string }>
 }) {
+  const params = await searchParams
   const allSkills = getSkills()
   const categories = getCategories()
 
   let filteredSkills = allSkills
 
   // Filter by search query
-  if (searchParams.q) {
+  if (params.q) {
     const fuse = new Fuse(allSkills, {
       keys: ['name', 'description', 'tags'],
       threshold: 0.3,
     })
-    const results = fuse.search(searchParams.q)
+    const results = fuse.search(params.q)
     filteredSkills = results.map((r: { item: Skill }) => r.item)
   }
 
   // Filter by category
-  if (searchParams.category) {
+  if (params.category) {
     filteredSkills = filteredSkills.filter(
-      skill => skill.category === searchParams.category
+      skill => skill.category === params.category
     )
   }
 
   // Sort
-  if (searchParams.sort === 'recent') {
+  if (params.sort === 'recent') {
     filteredSkills = [...filteredSkills].sort((a, b) =>
       new Date(b.addedDate).getTime() - new Date(a.addedDate).getTime()
     )
-  } else if (searchParams.sort === 'name') {
+  } else if (params.sort === 'name') {
     filteredSkills = [...filteredSkills].sort((a, b) => a.name.localeCompare(b.name))
   }
 
