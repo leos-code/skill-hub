@@ -3,11 +3,13 @@ import { getSkills, getCategories } from '@/lib/data'
 import { SearchBar } from '@/components/skills/SearchBar'
 import { CategoryFilter } from '@/components/skills/CategoryFilter'
 import { SkillGrid } from '@/components/skills/SkillGrid'
+import Fuse from 'fuse.js'
+import type { Skill } from '@/lib/schemas'
 
 function BrowseContent({
   searchParams,
 }: {
-  searchParams: { q?: string; category?: string; sort?: string }
+  searchParams: Promise<{ q?: string; category?: string; sort?: string }>
 }) {
   const allSkills = getSkills()
   const categories = getCategories()
@@ -16,13 +18,12 @@ function BrowseContent({
 
   // Filter by search query
   if (searchParams.q) {
-    const Fuse = require('fuse.js')
     const fuse = new Fuse(allSkills, {
       keys: ['name', 'description', 'tags'],
       threshold: 0.3,
     })
     const results = fuse.search(searchParams.q)
-    filteredSkills = results.map(r => r.item)
+    filteredSkills = results.map((r: { item: Skill }) => r.item)
   }
 
   // Filter by category
@@ -34,11 +35,11 @@ function BrowseContent({
 
   // Sort
   if (searchParams.sort === 'recent') {
-    filteredSkills.sort((a, b) =>
+    filteredSkills = [...filteredSkills].sort((a, b) =>
       new Date(b.addedDate).getTime() - new Date(a.addedDate).getTime()
     )
   } else if (searchParams.sort === 'name') {
-    filteredSkills.sort((a, b) => a.name.localeCompare(b.name))
+    filteredSkills = [...filteredSkills].sort((a, b) => a.name.localeCompare(b.name))
   }
 
   return (
@@ -62,7 +63,7 @@ function BrowseContent({
 export default function BrowsePage({
   searchParams,
 }: {
-  searchParams: { q?: string; category?: string; sort?: string }
+  searchParams: Promise<{ q?: string; category?: string; sort?: string }>
 }) {
   return (
     <Suspense fallback={<div>Loading...</div>}>

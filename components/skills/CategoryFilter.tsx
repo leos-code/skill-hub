@@ -14,11 +14,23 @@ export function CategoryFilter({ categories }: CategoryFilterProps) {
   const searchParams = useSearchParams()
   const currentCategory = searchParams.get('category')
 
+  // Build URL params preserving existing query
+  const buildUrl = (categoryId?: string) => {
+    const params = new URLSearchParams(searchParams.toString())
+    if (categoryId) {
+      params.set('category', categoryId)
+    } else {
+      params.delete('category')
+    }
+    const queryString = params.toString()
+    return `/browse${queryString ? `?${queryString}` : ''}`
+  }
+
   return (
     <div className="space-y-4">
       <h3 className="font-semibold">Categories</h3>
       <nav className="space-y-2">
-        <Link href="/browse">
+        <Link href={buildUrl()}>
           <Badge
             variant={currentCategory === null ? 'default' : 'outline'}
             className="w-full justify-start cursor-pointer"
@@ -27,7 +39,7 @@ export function CategoryFilter({ categories }: CategoryFilterProps) {
           </Badge>
         </Link>
         {categories.map(category => (
-          <Link key={category.id} href={`/browse?category=${category.id}`}>
+          <Link key={category.id} href={buildUrl(category.id)}>
             <Badge
               variant={currentCategory === category.id ? 'default' : 'outline'}
               className={cn(
