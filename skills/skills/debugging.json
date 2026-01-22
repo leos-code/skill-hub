@@ -1,0 +1,12 @@
+{
+  "id": "debugging",
+  "name": "Systematic Debugging",
+  "description": "Investigate bugs, test failures, and unexpected behavior methodically before proposing fixes.",
+  "category": "process",
+  "author": "superpowers",
+  "repository": "https://github.com/example/debugging",
+  "version": "1.0.0",
+  "tags": ["debugging", "troubleshooting", "bugfix"],
+  "addedDate": "2025-01-03",
+  "featured": false
+}
