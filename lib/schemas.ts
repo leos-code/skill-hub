@@ -14,7 +14,13 @@ export const SkillSchema = z.object({
   repository: z.string().url(),
   version: z.string(),
   tags: z.array(z.string()),
-  addedDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  addedDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).refine(
+    (date) => {
+      const parsed = new Date(date)
+      return !isNaN(parsed.getTime()) && parsed.toISOString().slice(0, 10) === date
+    },
+    { message: "Invalid date format or date" }
+  ),
   featured: z.boolean().default(false),
   screenshot: z.string().optional(),
   usageExample: z.string().optional(),
