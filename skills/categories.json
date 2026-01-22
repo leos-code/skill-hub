@@ -1,0 +1,20 @@
+{
+  "process": {
+    "id": "process",
+    "name": "Process Skills",
+    "description": "Skills that guide how to approach and execute tasks",
+    "icon": "workflow"
+  },
+  "implementation": {
+    "id": "implementation",
+    "name": "Implementation Skills",
+    "description": "Skills for building specific features or components",
+    "icon": "code"
+  },
+  "development": {
+    "id": "development",
+    "name": "Development Tools",
+    "description": "Skills for development workflows and automation",
+    "icon": "tool"
+  }
+}
