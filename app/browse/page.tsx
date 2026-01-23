@@ -1,74 +1,14 @@
-import { Suspense } from 'react'
 import { getSkills, getCategories } from '@/lib/data'
-import { SearchBar } from '@/components/skills/SearchBar'
-import { CategoryFilter } from '@/components/skills/CategoryFilter'
-import { SkillGrid } from '@/components/skills/SkillGrid'
-import Fuse from 'fuse.js'
-import type { Skill } from '@/lib/schemas'
+import { BrowseContent } from '@/components/skills/BrowseContent'
+import { Suspense } from 'react'
 
-async function BrowseContent({
-  searchParams,
-}: {
-  searchParams: Promise<{ q?: string; category?: string; sort?: string }>
-}) {
-  const params = await searchParams
+export default function BrowsePage() {
   const allSkills = getSkills()
   const categories = getCategories()
 
-  let filteredSkills = allSkills
-
-  // Filter by search query
-  if (params.q) {
-    const fuse = new Fuse(allSkills, {
-      keys: ['name', 'description', 'tags'],
-      threshold: 0.3,
-    })
-    const results = fuse.search(params.q)
-    filteredSkills = results.map((r: { item: Skill }) => r.item)
-  }
-
-  // Filter by category
-  if (params.category) {
-    filteredSkills = filteredSkills.filter(
-      skill => skill.category === params.category
-    )
-  }
-
-  // Sort
-  if (params.sort === 'recent') {
-    filteredSkills = [...filteredSkills].sort((a, b) =>
-      new Date(b.addedDate).getTime() - new Date(a.addedDate).getTime()
-    )
-  } else if (params.sort === 'name') {
-    filteredSkills = [...filteredSkills].sort((a, b) => a.name.localeCompare(b.name))
-  }
-
   return (
-    <div className="container py-8 px-4 mx-auto">
-      <div className="flex flex-col lg:flex-row gap-8">
-        <aside className="w-full lg:w-64 flex-shrink-0">
-          <CategoryFilter categories={categories} />
-        </aside>
-
-        <div className="flex-1">
-          <div className="mb-6">
-            <SearchBar />
-          </div>
-          <SkillGrid skills={filteredSkills} />
-        </div>
-      </div>
-    </div>
-  )
-}
-
-export default function BrowsePage({
-  searchParams,
-}: {
-  searchParams: Promise<{ q?: string; category?: string; sort?: string }>
-}) {
-  return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <BrowseContent searchParams={searchParams} />
+    <Suspense fallback={<div className="container py-8 px-4 mx-auto">Loading...</div>}>
+      <BrowseContent allSkills={allSkills} categories={categories} />
     </Suspense>
   )
 }

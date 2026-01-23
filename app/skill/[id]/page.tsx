@@ -4,23 +4,21 @@ import { SkillDetail } from '@/components/skills/SkillDetail'
 import { notFound } from 'next/navigation'
 import { createSkillMetadata } from '@/lib/metadata'
 
-export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
-  const { id } = await params
-  const skill = getSkillById(id)
+export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
+  const skill = getSkillById(params.id)
   if (!skill) return {}
   return createSkillMetadata(skill)
 }
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   const skills = getSkills()
   return skills.map(skill => ({
     id: skill.id,
   }))
 }
 
-export default async function SkillPage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params
-  const skill = getSkillById(id)
+export default function SkillPage({ params }: { params: { id: string } }) {
+  const skill = getSkillById(params.id)
 
   if (!skill) {
     notFound()
