@@ -2,7 +2,7 @@
 
 # Build the site
 echo "Building site..."
-npm run build
+npm run build && touch out/.nojekyll
 
 # Deploy to gh-pages
 echo "Deploying to GitHub Pages..."
