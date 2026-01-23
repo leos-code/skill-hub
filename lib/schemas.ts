@@ -3,6 +3,12 @@ import { z } from 'zod'
 export const CompatibilitySchema = z.object({
   claudeCode: z.string(),
   requires: z.array(z.string()),
+  cursor: z.boolean().optional(),
+  windsurf: z.boolean().optional(),
+  copilot: z.boolean().optional(),
+  kiro: z.boolean().optional(),
+  codex: z.boolean().optional(),
+  opencode: z.boolean().optional(),
 })
 
 export const SkillSchema = z.object({

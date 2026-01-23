@@ -1,0 +1,21 @@
+{
+  "id": "ui-ux-pro-max",
+  "name": "UI UX Pro Max",
+  "description": "AI skill providing design intelligence for building professional UI/UX across multiple platforms. Features 67 UI styles, 96 color palettes, 56 font pairings, 100 industry-specific reasoning rules, and intelligent design system generation.",
+  "category": "implementation",
+  "author": "nextlevelbuilder",
+  "repository": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+  "version": "2.2.0",
+  "tags": ["ui", "ux", "design", "frontend", "react", "tailwind", "swiftui", "flutter", "design-system"],
+  "addedDate": "2025-01-23",
+  "featured": true,
+  "usageExample": "Install via CLI: npm install -g uipro-cli && uipro init --ai cursor. Then use /ui-ux-pro-max Build a landing page for my SaaS product",
+  "compatibility": {
+    "claudeCode": ">=1.0.0",
+    "cursor": true,
+    "windsurf": true,
+    "copilot": true,
+    "kiro": true,
+    "requires": ["python3"]
+  }
+}
