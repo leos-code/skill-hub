@@ -1,0 +1,17 @@
+{
+  "id": "videocut-skills",
+  "name": "VideoCut Skills",
+  "description": "Video editing automation skill for removing verbal mistakes, silent segments, and filler words from videos. Integrates Whisper for subtitle generation, FFmpeg for video processing, and includes dictionary-based error correction.",
+  "category": "development",
+  "author": "Ceeon",
+  "repository": "https://github.com/Ceeon/videocut-skills",
+  "version": "1.0.0",
+  "tags": ["video", "ffmpeg", "whisper", "automation", "media"],
+  "addedDate": "2025-01-24",
+  "featured": true,
+  "usageExample": "Install: /videocut:安装 (automatically installs dependencies and downloads ~5GB models). Use commands like /videocut:remove-fillers, /videocut:remove-silence",
+  "compatibility": {
+    "claudeCode": ">=1.0.0",
+    "requires": ["ffmpeg", "python"]
+  }
+}
