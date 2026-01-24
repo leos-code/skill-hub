@@ -1,0 +1,13 @@
+{
+  "id": "seaborn",
+  "name": "Seaborn",
+  "description": "Statistical visualization with pandas integration. Use for quick exploration of distributions, relationships, and categorical comparisons with attractive defaults. Best for box plots, violin plots, pair plots, heatmaps. Built on matplotlib. For interactive plots use plotly; for publication styling use scientific-visualization.",
+  "category": "implementation",
+  "repository": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/seaborn",
+  "version": "1.0.0",
+  "tags": [
+    "visualization"
+  ],
+  "addedDate": "2026-01-24",
+  "featured": false
+}

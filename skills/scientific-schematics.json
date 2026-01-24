@@ -1,0 +1,13 @@
+{
+  "id": "scientific-schematics",
+  "name": "Scientific Schematics",
+  "description": "Create publication-quality scientific diagrams using Nano Banana Pro AI with smart iterative refinement. Uses Gemini 3 Pro for quality review. Only regenerates if quality is below threshold for your document type. Specialized in neural network architectures, system diagrams, flowcharts, biological pathways, and complex scientific visualizations.",
+  "category": "implementation",
+  "repository": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scientific-schematics",
+  "version": "1.0.0",
+  "tags": [
+    "visualization"
+  ],
+  "addedDate": "2026-01-24",
+  "featured": false
+}

@@ -1,0 +1,11 @@
+{
+  "id": "treatment-plans",
+  "name": "Treatment Plans",
+  "description": "Generate concise (3-4 page), focused medical treatment plans in LaTeX/PDF format for all clinical specialties. Supports general medical treatment, rehabilitation therapy, mental health care, chronic disease management, perioperative care, and pain management. Includes SMART goal frameworks, evidence-based interventions with minimal text citations, regulatory compliance (HIPAA), and professional formatting. Prioritizes brevity and clinical actionability.",
+  "category": "implementation",
+  "repository": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/treatment-plans",
+  "version": "1.0.0",
+  "tags": [],
+  "addedDate": "2026-01-24",
+  "featured": false
+}

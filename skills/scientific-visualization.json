@@ -1,0 +1,15 @@
+{
+  "id": "scientific-visualization",
+  "name": "Scientific Visualization",
+  "description": "Meta-skill for publication-ready figures. Use when creating journal submission figures requiring multi-panel layouts, significance annotations, error bars, colorblind-safe palettes, and specific journal formatting (Nature, Science, Cell). Orchestrates matplotlib/seaborn/plotly with publication styles. For quick exploration use seaborn or plotly directly.",
+  "category": "implementation",
+  "repository": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scientific-visualization",
+  "version": "1.0.0",
+  "tags": [
+    "plot",
+    "chart",
+    "visualization"
+  ],
+  "addedDate": "2026-01-24",
+  "featured": false
+}

@@ -1,0 +1,27 @@
+{
+  "id": "superpowers",
+  "name": "Superpowers",
+  "description": "A complete software development workflow for coding agents, built on composable skills. Includes brainstorming, TDD, systematic debugging, subagent-driven development, and code review workflows.",
+  "category": "process",
+  "repository": "https://github.com/obra/superpowers",
+  "version": "4.1.0",
+  "tags": [
+    "workflow",
+    "tdd",
+    "debugging",
+    "planning",
+    "code-review",
+    "subagent",
+    "git-worktrees"
+  ],
+  "addedDate": "2025-01-23",
+  "featured": true,
+  "usageExample": "Install via Claude Code plugin: /plugin marketplace add obra/superpowers-marketplace, then /plugin install superpowers@superpowers-marketplace",
+  "compatibility": {
+    "claudeCode": ">=1.0.0",
+    "cursor": true,
+    "codex": true,
+    "opencode": true,
+    "requires": []
+  }
+}

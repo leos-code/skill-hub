@@ -1,0 +1,14 @@
+{
+  "id": "metabolomics-workbench-database",
+  "name": "Metabolomics Workbench Database",
+  "description": "Access NIH Metabolomics Workbench via REST API (4,200+ studies). Query metabolites, RefMet nomenclature, MS/NMR data, m/z searches, study metadata, for metabolomics and biomarker discovery.",
+  "category": "implementation",
+  "repository": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/metabolomics-workbench-database",
+  "version": "1.0.0",
+  "tags": [
+    "data",
+    "database"
+  ],
+  "addedDate": "2026-01-24",
+  "featured": false
+}

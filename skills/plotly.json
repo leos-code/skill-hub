@@ -1,0 +1,13 @@
+{
+  "id": "plotly",
+  "name": "Plotly",
+  "description": "Interactive visualization library. Use when you need hover info, zoom, pan, or web-embeddable charts. Best for dashboards, exploratory analysis, and presentations. For static publication figures use matplotlib or scientific-visualization.",
+  "category": "implementation",
+  "repository": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/plotly",
+  "version": "1.0.0",
+  "tags": [
+    "visualization"
+  ],
+  "addedDate": "2026-01-24",
+  "featured": false
+}

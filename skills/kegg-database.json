@@ -1,0 +1,15 @@
+{
+  "id": "kegg-database",
+  "name": "Kegg Database",
+  "description": "Direct REST API access to KEGG (academic use only). Pathway analysis, gene-pathway mapping, metabolic pathways, drug interactions, ID conversion. For Python workflows with multiple databases, prefer bioservices. Use this for direct HTTP/REST work or KEGG-specific control.",
+  "category": "implementation",
+  "repository": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/kegg-database",
+  "version": "1.0.0",
+  "tags": [
+    "data",
+    "workflow",
+    "database"
+  ],
+  "addedDate": "2026-01-24",
+  "featured": false
+}

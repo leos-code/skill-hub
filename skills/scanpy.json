@@ -1,0 +1,14 @@
+{
+  "id": "scanpy",
+  "name": "Scanpy",
+  "description": "Standard single-cell RNA-seq analysis pipeline. Use for QC, normalization, dimensionality reduction (PCA/UMAP/t-SNE), clustering, differential expression, and visualization. Best for exploratory scRNA-seq analysis with established workflows. For deep learning models use scvi-tools; for data format questions use anndata.",
+  "category": "implementation",
+  "repository": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/scanpy",
+  "version": "1.0.0",
+  "tags": [
+    "workflow",
+    "visualization"
+  ],
+  "addedDate": "2026-01-24",
+  "featured": false
+}

@@ -1,0 +1,14 @@
+{
+  "id": "ensembl-database",
+  "name": "Ensembl Database",
+  "description": "Query Ensembl genome database REST API for 250+ species. Gene lookups, sequence retrieval, variant analysis, comparative genomics, orthologs, VEP predictions, for genomic research.",
+  "category": "implementation",
+  "repository": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/ensembl-database",
+  "version": "1.0.0",
+  "tags": [
+    "data",
+    "database"
+  ],
+  "addedDate": "2026-01-24",
+  "featured": false
+}

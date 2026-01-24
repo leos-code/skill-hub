@@ -1,0 +1,13 @@
+{
+  "id": "dask",
+  "name": "Dask",
+  "description": "Distributed computing for larger-than-RAM pandas/NumPy workflows. Use when you need to scale existing pandas/NumPy code beyond memory or across clusters. Best for parallel file processing, distributed ML, integration with existing pandas code. For out-of-core analytics on single machine use vaex; for in-memory speed use polars.",
+  "category": "implementation",
+  "repository": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/dask",
+  "version": "1.0.0",
+  "tags": [
+    "workflow"
+  ],
+  "addedDate": "2026-01-24",
+  "featured": false
+}

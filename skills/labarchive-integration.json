@@ -1,0 +1,15 @@
+{
+  "id": "labarchive-integration",
+  "name": "Labarchive Integration",
+  "description": "Electronic lab notebook API integration. Access notebooks, manage entries/attachments, backup notebooks, integrate with Protocols.io/Jupyter/REDCap, for programmatic ELN workflows.",
+  "category": "implementation",
+  "repository": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/labarchive-integration",
+  "version": "1.0.0",
+  "tags": [
+    "integration",
+    "workflow",
+    "api"
+  ],
+  "addedDate": "2026-01-24",
+  "featured": false
+}

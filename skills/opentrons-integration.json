@@ -1,0 +1,14 @@
+{
+  "id": "opentrons-integration",
+  "name": "Opentrons Integration",
+  "description": "Official Opentrons Protocol API for OT-2 and Flex robots. Use when writing protocols specifically for Opentrons hardware with full access to Protocol API v2 features. Best for production Opentrons protocols, official API compatibility. For multi-vendor automation or broader equipment control use pylabrobot.",
+  "category": "implementation",
+  "repository": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/opentrons-integration",
+  "version": "1.0.0",
+  "tags": [
+    "integration",
+    "api"
+  ],
+  "addedDate": "2026-01-24",
+  "featured": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "uniprot-database",
+  "name": "Uniprot Database",
+  "description": "Direct REST API access to UniProt. Protein searches, FASTA retrieval, ID mapping, Swiss-Prot/TrEMBL. For Python workflows with multiple databases, prefer bioservices (unified interface to 40+ services). Use this for direct HTTP/REST work or UniProt-specific control.",
+  "category": "implementation",
+  "repository": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/uniprot-database",
+  "version": "1.0.0",
+  "tags": [
+    "data",
+    "workflow",
+    "database"
+  ],
+  "addedDate": "2026-01-24",
+  "featured": false
+}

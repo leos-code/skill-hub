@@ -1,0 +1,13 @@
+{
+  "id": "transformers",
+  "name": "Transformers",
+  "description": "This skill should be used when working with pre-trained transformer models for natural language processing, computer vision, audio, or multimodal tasks. Use for text generation, classification, question answering, translation, summarization, image classification, object detection, speech recognition, and fine-tuning models on custom datasets.",
+  "category": "implementation",
+  "repository": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/transformers",
+  "version": "1.0.0",
+  "tags": [
+    "workflow"
+  ],
+  "addedDate": "2026-01-24",
+  "featured": false
+}

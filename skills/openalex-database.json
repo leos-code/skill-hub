@@ -1,0 +1,14 @@
+{
+  "id": "openalex-database",
+  "name": "Openalex Database",
+  "description": "Query and analyze scholarly literature using the OpenAlex database. This skill should be used when searching for academic papers, analyzing research trends, finding works by authors or institutions, tracking citations, discovering open access publications, or conducting bibliometric analysis across 240M+ scholarly works. Use for literature searches, research output analysis, citation analysis, and academic database queries.",
+  "category": "implementation",
+  "repository": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/openalex-database",
+  "version": "1.0.0",
+  "tags": [
+    "data",
+    "database"
+  ],
+  "addedDate": "2026-01-24",
+  "featured": false
+}

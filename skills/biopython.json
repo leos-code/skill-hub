@@ -1,0 +1,16 @@
+{
+  "id": "biopython",
+  "name": "Biopython",
+  "description": "Comprehensive molecular biology toolkit. Use for sequence manipulation, file parsing (FASTA/GenBank/PDB), phylogenetics, and programmatic NCBI/PubMed access (Bio.Entrez). Best for batch processing, custom bioinformatics pipelines, BLAST automation. For quick lookups use gget; for multi-service integration use bioservices.",
+  "category": "implementation",
+  "repository": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/biopython",
+  "version": "1.0.0",
+  "tags": [
+    "pandas",
+    "workflow",
+    "python",
+    "numpy"
+  ],
+  "addedDate": "2026-01-24",
+  "featured": false
+}

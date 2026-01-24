@@ -4,7 +4,7 @@ import { ArrowRight, Search } from 'lucide-react'
 
 export function Hero() {
   return (
-    <section className="container px-4 py-24 mx-auto text-center">
+    <section className="container px-4 pt-24 pb-8 mx-auto text-center">
       <div className="mx-auto max-w-3xl">
         <h1 className="text-4xl font-bold tracking-tight sm:text-6xl mb-6">
           Discover Amazing Claude Code Skills

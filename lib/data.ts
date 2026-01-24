@@ -3,7 +3,7 @@ import path from 'path'
 import { SkillSchema, CategorySchema, type Skill, type Category } from './schemas'
 
 const skillsDir = path.join(process.cwd(), 'skills')
-const skillsFileDir = path.join(skillsDir, 'skills')
+const skillsFileDir = skillsDir
 
 export function getCategories(): Category[] {
   try {
@@ -30,6 +30,11 @@ export function getSkills(): Skill[] {
     const skills: Skill[] = []
 
     for (const file of files) {
+      // Skip config files (index.json, categories.json)
+      if (file === 'index.json' || file === 'categories.json') {
+        continue
+      }
+      
       if (file.endsWith('.json')) {
         try {
           const fullPath = path.join(skillsFileDir, file)

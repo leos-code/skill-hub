@@ -1,0 +1,11 @@
+{
+  "id": "medchem",
+  "name": "Medchem",
+  "description": "Medicinal chemistry filters. Apply drug-likeness rules (Lipinski, Veber), PAINS filters, structural alerts, complexity metrics, for compound prioritization and library filtering.",
+  "category": "implementation",
+  "repository": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/medchem",
+  "version": "1.0.0",
+  "tags": [],
+  "addedDate": "2026-01-24",
+  "featured": false
+}

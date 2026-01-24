@@ -1,0 +1,15 @@
+{
+  "id": "pdf",
+  "name": "Pdf",
+  "description": "Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms. When Claude needs to fill in a PDF form or programmatically process, generate, or analyze PDF documents at scale.",
+  "category": "implementation",
+  "repository": "https://github.com/anthropics/skills/tree/main/skills/pdf",
+  "version": "1.0.0",
+  "tags": [
+    "document",
+    "pdf",
+    "workflow"
+  ],
+  "addedDate": "2026-01-24",
+  "featured": false
+}

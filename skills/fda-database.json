@@ -1,0 +1,14 @@
+{
+  "id": "fda-database",
+  "name": "Fda Database",
+  "description": "Query openFDA API for drugs, devices, adverse events, recalls, regulatory submissions (510k, PMA), substance identification (UNII), for FDA regulatory data analysis and safety research.",
+  "category": "implementation",
+  "repository": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/fda-database",
+  "version": "1.0.0",
+  "tags": [
+    "data",
+    "database"
+  ],
+  "addedDate": "2026-01-24",
+  "featured": false
+}

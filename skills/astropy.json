@@ -1,0 +1,13 @@
+{
+  "id": "astropy",
+  "name": "Astropy",
+  "description": "Comprehensive Python library for astronomy and astrophysics. This skill should be used when working with astronomical data including celestial coordinates, physical units, FITS files, cosmological calculations, time systems, tables, world coordinate systems (WCS), and astronomical data analysis. Use when tasks involve coordinate transformations, unit conversions, FITS file manipulation, cosmological distance calculations, time scale conversions, or astronomical data processing.",
+  "category": "implementation",
+  "repository": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/astropy",
+  "version": "1.0.0",
+  "tags": [
+    "workflow"
+  ],
+  "addedDate": "2026-01-24",
+  "featured": false
+}

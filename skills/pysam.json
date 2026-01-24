@@ -1,0 +1,13 @@
+{
+  "id": "pysam",
+  "name": "Pysam",
+  "description": "Genomic file toolkit. Read/write SAM/BAM/CRAM alignments, VCF/BCF variants, FASTA/FASTQ sequences, extract regions, calculate coverage, for NGS data processing pipelines.",
+  "category": "implementation",
+  "repository": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pysam",
+  "version": "1.0.0",
+  "tags": [
+    "workflow"
+  ],
+  "addedDate": "2026-01-24",
+  "featured": false
+}

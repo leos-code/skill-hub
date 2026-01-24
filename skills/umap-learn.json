@@ -1,0 +1,14 @@
+{
+  "id": "umap-learn",
+  "name": "Umap Learn",
+  "description": "UMAP dimensionality reduction. Fast nonlinear manifold learning for 2D/3D visualization, clustering preprocessing (HDBSCAN), supervised/parametric UMAP, for high-dimensional data.",
+  "category": "implementation",
+  "repository": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/umap-learn",
+  "version": "1.0.0",
+  "tags": [
+    "workflow",
+    "visualization"
+  ],
+  "addedDate": "2026-01-24",
+  "featured": false
+}

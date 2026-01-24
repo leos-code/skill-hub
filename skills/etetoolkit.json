@@ -1,0 +1,13 @@
+{
+  "id": "etetoolkit",
+  "name": "Etetoolkit",
+  "description": "Phylogenetic tree toolkit (ETE). Tree manipulation (Newick/NHX), evolutionary event detection, orthology/paralogy, NCBI taxonomy, visualization (PDF/SVG), for phylogenomics.",
+  "category": "implementation",
+  "repository": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/etetoolkit",
+  "version": "1.0.0",
+  "tags": [
+    "visualization"
+  ],
+  "addedDate": "2026-01-24",
+  "featured": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "omero-integration",
+  "name": "Omero Integration",
+  "description": "Microscopy data management platform. Access images via Python, retrieve datasets, analyze pixels, manage ROIs/annotations, batch processing, for high-content screening and microscopy workflows.",
+  "category": "implementation",
+  "repository": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/omero-integration",
+  "version": "1.0.0",
+  "tags": [
+    "integration",
+    "workflow",
+    "api"
+  ],
+  "addedDate": "2026-01-24",
+  "featured": false
+}

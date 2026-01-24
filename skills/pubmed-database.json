@@ -1,0 +1,15 @@
+{
+  "id": "pubmed-database",
+  "name": "Pubmed Database",
+  "description": "Direct REST API access to PubMed. Advanced Boolean/MeSH queries, E-utilities API, batch processing, citation management. For Python workflows, prefer biopython (Bio.Entrez). Use this for direct HTTP/REST work or custom API implementations.",
+  "category": "implementation",
+  "repository": "https://github.com/K-Dense-AI/claude-scientific-skills/tree/main/scientific-skills/pubmed-database",
+  "version": "1.0.0",
+  "tags": [
+    "data",
+    "workflow",
+    "database"
+  ],
+  "addedDate": "2026-01-24",
+  "featured": false
+}

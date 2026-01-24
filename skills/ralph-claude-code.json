@@ -1,0 +1,29 @@
+{
+  "id": "ralph-claude-code",
+  "name": "Ralph Claude Code",
+  "description": "Autonomous AI development loop with intelligent exit detection. Enables continuous development cycles where Claude Code iteratively improves your project until completion, with built-in rate limiting and circuit breaker safeguards.",
+  "category": "development",
+  "repository": "https://github.com/frankbria/ralph-claude-code",
+  "version": "0.10.1",
+  "tags": [
+    "autonomous",
+    "loop",
+    "automation",
+    "workflow",
+    "tmux",
+    "monitoring",
+    "prd-import"
+  ],
+  "addedDate": "2025-01-23",
+  "featured": true,
+  "usageExample": "Install: git clone https://github.com/frankbria/ralph-claude-code.git && ./install.sh. Then: ralph-setup my-project && cd my-project && ralph --monitor",
+  "compatibility": {
+    "claudeCode": ">=1.0.0",
+    "requires": [
+      "bash",
+      "tmux",
+      "jq",
+      "git"
+    ]
+  }
+}

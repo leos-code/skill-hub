@@ -1,0 +1,15 @@
+{
+  "id": "brand-guidelines",
+  "name": "Brand Guidelines",
+  "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply.",
+  "category": "implementation",
+  "repository": "https://github.com/anthropics/skills/tree/main/skills/brand-guidelines",
+  "version": "1.0.0",
+  "tags": [
+    "guidelines",
+    "brand",
+    "styling"
+  ],
+  "addedDate": "2026-01-24",
+  "featured": false
+}
