@@ -9,6 +9,18 @@ interface SkillCardProps {
 }
 
 export function SkillCard({ skill }: SkillCardProps) {
+  // Extract owner from GitHub repository URL
+  const getGithubOwner = (url: string): string => {
+    try {
+      const match = url.match(/github\.com\/([^\/]+)/)
+      return match ? match[1] : 'Unknown'
+    } catch {
+      return 'Unknown'
+    }
+  }
+
+  const author = getGithubOwner(skill.repository)
+
   return (
     <Link href={`/skill/${skill.id}`}>
       <Card className="h-full transition-all hover:scale-[1.02] hover:shadow-lg cursor-pointer">
@@ -44,7 +56,7 @@ export function SkillCard({ skill }: SkillCardProps) {
             )}
           </div>
           <div className="mt-4 flex items-center text-sm text-muted-foreground">
-            <span>by {skill.author}</span>
+            <span>by {author}</span>
             <ExternalLink className="ml-auto h-4 w-4" />
           </div>
         </CardContent>
