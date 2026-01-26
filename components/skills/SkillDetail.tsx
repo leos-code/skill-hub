@@ -50,14 +50,14 @@ export function SkillDetail({ skill, category }: SkillDetailProps) {
         </Button>
       </Link>
 
-      <div className="space-y-6">
-        <div>
+      <article className="space-y-6">
+        <header>
           <div className="flex items-start justify-between mb-4">
             <h1 className="text-4xl font-bold">{skill.name}</h1>
             {skill.featured && <Badge variant="secondary">Featured</Badge>}
           </div>
           <p className="text-xl text-muted-foreground">{skill.description}</p>
-        </div>
+        </header>
 
         {skill.screenshot && (
           <Card>
@@ -79,8 +79,10 @@ export function SkillDetail({ skill, category }: SkillDetailProps) {
             <CardContent className="space-y-4">
               <div className="flex items-center gap-2 text-sm">
                 <Github className="h-4 w-4 text-muted-foreground" />
+                {/**
                 <span className="font-medium">Author:</span>
-                <span>{author}</span>
+                <span>{skill.author}</span>
+                **/}
               </div>
               {category && (
                 <div className="flex items-center gap-2 text-sm">
@@ -172,7 +174,7 @@ export function SkillDetail({ skill, category }: SkillDetailProps) {
             </div>
           </CardContent>
         </Card>
-      </div>
+      </article>
     </div>
   )
 }

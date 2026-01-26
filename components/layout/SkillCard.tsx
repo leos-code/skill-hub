@@ -56,7 +56,9 @@ export function SkillCard({ skill }: SkillCardProps) {
             )}
           </div>
           <div className="mt-4 flex items-center text-sm text-muted-foreground">
-            <span>by {author}</span>
+          {/**
+            <span>by {skill.author}</span>
+            **/}
             <ExternalLink className="ml-auto h-4 w-4" />
           </div>
         </CardContent>

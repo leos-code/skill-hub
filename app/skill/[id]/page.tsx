@@ -8,7 +8,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const { id } = await params
   const skill = getSkillById(id)
   if (!skill) return {}
-  return createSkillMetadata(skill)
+  return createSkillMetadata(skill, `/skill/${id}/`)
 }
 
 export function generateStaticParams() {
