@@ -1,4 +1,0 @@
-User-Agent: *
-Allow: /
-
-Sitemap: https://leos-code.github.io/skill-hub/sitemap.xml
