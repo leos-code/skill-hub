@@ -2,6 +2,12 @@
 
 A navigation site for discovering Claude Code agent skills.
 
+![skillhub-1](./skillhub-1.png)
+
+![skillhub-2](./skillhub-2.png)
+
+![skillhub-3](./skillhub-3.png)
+
 ## Development
 
 ```bash
